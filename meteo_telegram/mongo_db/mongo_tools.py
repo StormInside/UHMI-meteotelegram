@@ -39,7 +39,6 @@ class DatabaseManager:
 
 class MongoDb:
     MONGO_URL = 'mongodb://mongo:27017/'
-
     def __init__(self):
         client = MongoClient(self.MONGO_URL)
         self.db = client["telegram"]

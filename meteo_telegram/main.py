@@ -61,9 +61,7 @@ def download_and_process_telegrams(country_code):
     for document in documents:
         id_telegram = document["id_telegram"]
         data_for_mongo = {"id_telegram": id_telegram, "data": document}
-        print(data_for_mongo)
         data_for_mongo["data"].pop("id_telegram", None)
-
         # Створення або отримання колекції для країни
         collection = db_manager.get_or_create_collection(country_code)
         print(data_for_mongo)

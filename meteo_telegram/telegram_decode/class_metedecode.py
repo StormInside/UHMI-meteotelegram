@@ -154,11 +154,3 @@ class TelegramMeteoDecoder:
                 'ground_state': self.get_ground_state()
 
             }
-
-
-# if __name__ == "__main__":
-#     telegram_to_decode = "AAXX 16091 33658 11222 81502 11008 21008 39981 40292 52007 61222 72842 886// 333 31003 40999 88703 555 1/004"
-#     decoder = TelegramMeteoDecoder()
-#     decoded_telegram = decoder.decode(telegram_to_decode)
-#
-#     print(decoder.get_decoded_data())
