@@ -1,0 +1,6 @@
+jobs:
+  - name: Daily Meteo Telegrams Download
+    command: python download_telegrams.py
+    schedule: "0 5 * * *"
+    utc: false
+    captureStdout: true

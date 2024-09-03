@@ -9,7 +9,7 @@ from fake_useragent import UserAgent
 from .class_metedecode import TelegramMeteoDecoder
 
 def get_user_agent():
-    return UserAgent(verify_ssl=False).random
+    return UserAgent().random
 
 class TelegramProcessor:
     stations_list_by = [

@@ -38,8 +38,8 @@ class DatabaseManager:
 
 
 class MongoDb:
-    MONGO_URL = 'mongodb://mongo:27017/'
-    def __init__(self):
+    def __init__(self, url):
+        self.MONGO_URL = url
         client = MongoClient(self.MONGO_URL)
         self.db = client["telegram"]
         self.db_manager = DatabaseManager(self.db)
